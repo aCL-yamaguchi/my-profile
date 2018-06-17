@@ -8,6 +8,9 @@
         <router-link tag="li" to="/photo">
           <a>PHOTO</a>
         </router-link>
+        <router-link tag="li" to="/contact">
+          <a>CONTACT</a>
+        </router-link>
       </ul>
     <!-- #header --></div>
     <div id="content">

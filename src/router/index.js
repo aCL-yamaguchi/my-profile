@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Index from '@/components/Index'
 import About from '@/components/About'
 import Photo from '@/components/Photo'
+import Contact from '@/components/Contact'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/photo',
       name: 'PHOTO',
       component: Photo
+    },
+    {
+      path: '/contact',
+      name: 'CONTACT',
+      component: Contact
     }
   ]
 })
