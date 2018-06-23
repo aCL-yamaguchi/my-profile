@@ -1,8 +1,7 @@
 <template>
  <div>
     <h1>PHOTO</h1>
-    <img :src="imagePath">
-    <div id="next-button"><button v-on:click="imageCntUp()">NEXT</button></div>
+    <img :src="imagePath" v-on:click="imageCntUp()">
  </div>
 </template>
 
@@ -11,8 +10,7 @@ export default {
   data () {
     return {
       cnt: 0,
-      images: ['hobby01', 'hobby02', 'hobby03', 'hobby04'],
-      image_src: require('./../../static/assets/hobby01.jpg')
+      images: ['hobby01', 'hobby02', 'hobby03', 'hobby04']
     }
   },
   computed: {
@@ -31,4 +29,4 @@ export default {
 
 <style scoped>
 
-</style>å
+</style>

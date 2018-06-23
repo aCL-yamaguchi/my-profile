@@ -3,11 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue'
+// model
+// import Photo from './model/photo.js'
+
 Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
@@ -19,3 +21,10 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+/*
+new Vue({
+  el: '#photo',
+  components: { Photo },
+  template: '<Photo/>'
+})
+*/

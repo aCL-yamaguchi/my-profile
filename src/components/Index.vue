@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="background">
-      <img src="../assets/profile01.jpg" alt="profile01">
+      <img src="./../../static/assets/profile01.jpg" alt="profile01">
     <!-- #background --></div>
     <div id="base-profile">
       <p>Arata Yamaguchi</p>
