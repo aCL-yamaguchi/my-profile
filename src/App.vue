@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="header">
-      <dropdown-menu></dropdown-menu>
+      <dropdown-menu :label="label" :list-items="listItems"></dropdown-menu>
     <!-- #header --></div>
     <div id="content">
       <router-view/>
@@ -13,15 +13,34 @@
 
 <script>
 // import
-import Vue from 'vue'
 import DropdownMenu from './components/DropdownMenu'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    DropdownMenu
+  },
+  data () {
+    return {
+      // dropdown-menu
+      label: 'MENU',
+      listItems: [
+        {
+          name: 'ABOUT',
+          path: '/about'
+        },
+        {
+          name: 'PHOTO',
+          path: '/photo'
+        },
+        {
+          name: 'CONTACT',
+          path: '/contact'
+        }
+      ]
+    }
+  }
 }
-
-// resist components
-Vue.component('dropdown-menu', DropdownMenu)
 </script>
 
 <style>
